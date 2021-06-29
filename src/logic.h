@@ -9,8 +9,8 @@ class logic{
 		logic() = default;
 		~logic() = default;
 
-		void display_even ( std::vector<int> list );
-		void display_odd( std::vector<int> list );
+		std::vector<int> display_even ( std::vector<int> list );
+		std::vector<int> display_odd( std::vector<int> list );
 };
 
 #endif // _SRC_LOGIC_H

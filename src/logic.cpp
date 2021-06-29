@@ -5,20 +5,29 @@
 
 using namespace std;
 
-void logic::display_even ( std::vector<int> list ){
-  MESSAGE_LOG("LIST OF EVEN NUMBERS\n");
+std::vector<int> logic::display_even ( std::vector<int> list ){
 
-  for(auto &num : list){
-    if(num%2 == 0)
-      cout << num << " ";
-  } 
+	std::vector<int> output {};
+
+	//MESSAGE_LOG("display_even");
+
+	for(auto &num : list){
+	  if(num%2 == 0)
+	    output.push(num);
+	} 
+
+	return output;
 }
 
-void logic::display_odd( std::vector<int> list ){
-  MESSAGE_LOG("LIST OF ODD NUMBERS\n");
+std::vector<int> logic::display_odd( std::vector<int> list ){
+	std::vector<int> output {};
 
-   for(auto &num : list){
-    if(num%2 != 0)
-      cout << num << " ";
-  } 
+	//MESSAGE_LOG("display_odd");
+
+	for(auto &num : list){
+	  if(num%2 != 0)
+	    output.push(num);
+	}
+
+	return output;  
 }
