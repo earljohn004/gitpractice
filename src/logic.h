@@ -11,6 +11,7 @@ class logic{
 
 		std::vector<int> display_even ( std::vector<int> list );
 		std::vector<int> display_odd( std::vector<int> list );
+		bool isPalindrome(std::string text);
 };
 
 #endif // _SRC_LOGIC_H

@@ -3,7 +3,6 @@
 #include <iostream>
 #include <vector>
 
-using namespace std;
 
 std::vector<int> logic::display_even ( std::vector<int> list ){
 
@@ -30,4 +29,19 @@ std::vector<int> logic::display_odd( std::vector<int> list ){
 	}
 
 	return output;  
+}
+
+// Function for implementing Palindrome Checking  
+bool isPalindrome(std::string text){
+  bool flag = true;
+  int len = text.length();
+  
+  for(int i = 0; i < len/2; i++){
+    if(text.at(i) != text.at(len-1-i){
+	flag = false;
+	break;
+      }       
+   }  
+    
+    return flag;
 }
