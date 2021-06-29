@@ -37,7 +37,7 @@ bool isPalindrome(std::string text){
   int len = text.length();
   
   for(int i = 0; i < len/2; i++){
-    if(text.at(i) != text.at(len-1-i){
+    if(text.at(i) != text.at(len-1-i)){
 	flag = false;
 	break;
       }       
