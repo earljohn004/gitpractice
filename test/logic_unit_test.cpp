@@ -21,7 +21,7 @@ TEST(random_test){
 	int count = 0;
 
 	for( auto num : result ){
-		// ASSERT_EQUAL( num, get_even.at(count) );
+		ASSERT_EQUAL( num, get_even.at(count) );
 		VAR_LOG(num);
 		++count;
 	}

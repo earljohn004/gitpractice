@@ -13,7 +13,7 @@ std::vector<int> logic::display_even ( std::vector<int> list ){
 
 	for(auto &num : list){
 	  if(num%2 == 0)
-	    output.push(num);
+	    output.push_back(num);
 	} 
 
 	return output;
@@ -26,7 +26,7 @@ std::vector<int> logic::display_odd( std::vector<int> list ){
 
 	for(auto &num : list){
 	  if(num%2 != 0)
-	    output.push(num);
+	    output.push_back(num);
 	}
 
 	return output;  
