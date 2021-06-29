@@ -4,10 +4,19 @@
 #include <vector>
 
 
-void logic::display_even ( std::vector<int> list ){
+std::vector<int> logic::display_even ( std::vector<int> list ){
+
+	std::vector<int> output {};
+
 	MESSAGE_LOG("display_even");
+
+	return output;
 }
 
-void logic::display_odd( std::vector<int> list ){
+std::vector<int> logic::display_odd( std::vector<int> list ){
+	std::vector<int> output {};
+
 	MESSAGE_LOG("display_odd");
+
+	return output;
 }
