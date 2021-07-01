@@ -2,7 +2,21 @@
 #include "common_debug.h"
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
+std::vector<int> logic::display_even ( std::vector<int> list ){
+
+	std::vector<int> output {};
+
+	//MESSAGE_LOG("display_even");
+
+	for(auto &num : list){
+	  if(num%2 == 0)
+	    output.push_back(num);
+	} 
+
+	return output;
+}
 
 std::vector<int> logic::display_even ( std::vector<int> list ){
 
@@ -32,7 +46,8 @@ std::vector<int> logic::display_odd( std::vector<int> list ){
 }
 
 // Function for implementing Palindrome Checking  
-bool isPalindrome(std::string text){
+bool logic::isPalindrome(std::string text){
+
   bool flag = true;
   int len = text.length();
   
@@ -42,6 +57,14 @@ bool isPalindrome(std::string text){
 	break;
       }       
    }  
-    
-    return flag;
+
+#if 0
+  std::string newstring(text);
+  std::reverse(newstring.begin(), newstring.end());
+
+  if( newstring != text ) return false;
+  else return true;
+#endif
+
+	return flag;
 }

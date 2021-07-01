@@ -27,6 +27,17 @@ TEST(random_test){
 	}
 }
 
+TEST( palindrome_test ){
+	std::unique_ptr<logic> test = std::make_unique<logic>();
+
+	ASSERT_EQUAL( true , test->isPalindrome("aaa"));
+	ASSERT_EQUAL( false , test->isPalindrome("test"));
+	ASSERT_EQUAL( true , test->isPalindrome("nasabayabasan"));
+	ASSERT_EQUAL( false , test->isPalindrome("earl"));
+	ASSERT_EQUAL( true , test->isPalindrome("EARLLRAE"));
+	ASSERT_EQUAL( true , test->isPalindrome(""));
+}
+
 TEST_MAIN()
 
 #endif
