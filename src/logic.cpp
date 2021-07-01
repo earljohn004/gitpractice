@@ -4,6 +4,7 @@
 #include <vector>
 #include <algorithm>
 
+# if 0
 std::vector<int> logic::display_even ( std::vector<int> list ){
 
 	std::vector<int> output {};
@@ -17,6 +18,7 @@ std::vector<int> logic::display_even ( std::vector<int> list ){
 
 	return output;
 }
+#endif
 
 std::vector<int> logic::display_even ( std::vector<int> list ){
 
